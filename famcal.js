@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (list.length > 1) {
                 steps.textContent += `s ${click.innerText}`;
             } else {
-                steps.textContent = click.innerText;
+                steps.textContent = `min ${click.innerText}`;
             }
         };
     });
@@ -79,171 +79,178 @@ document.addEventListener('DOMContentLoaded', () => {
                         case '':
                             ans.innerText = 'Ställ din fråga.';
                             break;
-                        case 'fars fars far':
+                        case 'min fars fars far':
                             ans.innerText = 'gammelfarfar';
                             break;
-                        case 'fars fars mor':
+                        case 'min fars fars mor':
                             ans.innerText = 'gammelfarmor';
                             break;
-                        case 'fars mors far':
+                        case 'min fars mors far':
                             ans.innerText = 'gammelmorfar';
                             break;
-                        case 'fars mors mor':
+                        case 'min fars mors mor':
                             ans.innerText = 'gammelmormor';
                             break;
-                        case 'fars fru':
+                        case 'min fars fru':
                             ans.innerText = 'kanske min mor?';
                             break;
-                        case 'fars far':
+                        case 'min fars far':
                             ans.innerText = 'farfar';
                             break;
-                        case 'fars mor':
+                        case 'min fars mor':
                             ans.innerText = 'farmor';
                             break;
-                        case 'fars bror':
+                        case 'min fars bror':
                             ans.innerText = 'farbror';
                             break;
-                        case 'fars syster':
+                        case 'min fars syster':
                             ans.innerText = 'faster';
                             break;
-                        case 'fars son':
+                        case 'min fars son':
                             ans.innerText = 'min syskon eller jag?';
                             break;
-                        case 'fars dotter':
+                        case 'min fars dotter':
                             ans.innerText = 'min syskon eller jag?';
                             break;
-                        case 'farrs brors son':
+                        case 'min farrs brors son':
                             ans.innerText = 'kusin';
                             break;
-                        case 'fars brors dotter':
+                        case 'min fars brors dotter':
                             ans.innerText = 'kusin';
                             break;
-                        case 'fars systers son':
+                        case 'min fars systers son':
                             ans.innerText = 'kusin';
                             break;
-                        case 'fars systers dotter':
+                        case 'min fars systers dotter':
                             ans.innerText = 'kusin';
                             break;
-                        case 'mors fars far':
+                        case 'min mors fars far':
                             ans.innerText = 'gammelfarfar';
                             break;
-                        case 'mors fars mor':
+                        case 'min mors fars mor':
                             ans.innerText = 'gammelfarmor';
                             break;
-                        case 'mors mors far':
+                        case 'min mors mors far':
                             ans.innerText = 'gammelmorfar';
                             break;
-                        case 'mors mors mor':
+                        case 'min mors mors mor':
                             ans.innerText = 'gammelmormor';
                             break;
-                        case 'mors man':
+                        case 'min mors man':
                             ans.innerText = 'kanske min far?';
                             break;
-                        case 'mors far':
+                        case 'min mors far':
                             ans.innerText = 'morfar';
                             break;
-                        case 'mors mor':
+                        case 'min mors mor':
                             ans.innerText = 'mormor';
                             break;
-                        case 'mors bror':
+                        case 'min mors bror':
                             ans.innerText = 'morbror';
                             break;
-                        case 'mors syster':
+                        case 'min mors syster':
                             ans.innerText = 'moster';
                             break;
-                        case 'mors son':
+                        case 'min mors son':
                             ans.innerText = 'min syskon eller jag?';
                             break;
-                        case 'mors dotter':
+                        case 'min mors dotter':
                             ans.innerText = 'min syskon eller jag?';
                             break;
-                        case 'mors brors son':
+                        case 'min mors brors son':
                             ans.innerText = 'kusin';
                             break;
-                        case 'mors brors dotter':
+                        case 'min mors brors dotter':
                             ans.innerText = 'kusin';
                             break;
-                        case 'mors systers son':
+                        case 'min mors systers son':
                             ans.innerText = 'kusin';
                             break;
-                        case 'mors systers dotter':
+                        case 'min mors systers dotter':
                             ans.innerText = 'kusin';
                             break;
-                        case 'mans far':
+                        case 'min mans far':
                             ans.innerText = 'svärfar';
                             break;
-                        case 'mans mor':
+                        case 'min mans mor':
                             ans.innerText = 'svärmor';
                             break;
-                        case 'mans bror':
+                        case 'min mans bror':
                             ans.innerText = 'svåger';
                             break;
-                        case 'mans syster':
+                        case 'min mans syster':
                             ans.innerText = 'svägerska';
                             break;
-                        case 'frus far':
+                        case 'min frus far':
                             ans.innerText = 'svärfar';
                             break;
-                        case 'frus mor':
+                        case 'min frus mor':
                             ans.innerText = 'svärmor';
                             break;
-                        case 'frus bror':
+                        case 'min frus bror':
                             ans.innerText = 'svåger';
                             break;
-                        case 'frus syster':
+                        case 'min frus syster':
                             ans.innerText = 'svägerska';
                             break;
-                        case 'brors far':
+                        case 'min brors far':
                             ans.innerText = 'kanske min far?';
                             break;
-                        case 'brors mor':
+                        case 'min brors mor':
                             ans.innerText = 'kanske min mor?';
                             break;
-                        case 'brors fru':
+                        case 'min brors fru':
                             ans.innerText = 'svägerska';
                             break;
-                        case 'brors son':
+                        case 'min brors son':
                             ans.innerText = 'brorson';
                             break;
-                        case 'brors dotter':
+                        case 'min brors dotter':
                             ans.innerText = 'brosdotter';
                             break;
-                        case 'systers man':
+                        case 'min systers far':
+                            ans.innerText = 'kanske min far?';
+                            break;
+                        case 'min systers mor':
+                            ans.innerText = 'kanske min mor?';
+                            break;
+                        case 'min systers man':
                             ans.innerText = 'svåger';
-                        case 'systers son':
+                            break;
+                        case 'min systers son':
                             ans.innerText = 'systerson';
                             break;
-                        case 'systers dotter':
+                        case 'min systers dotter':
                             ans.innerText = 'systerdotter';
                             break;
-                        case 'sons fru':
+                        case 'min sons fru':
                             ans.innerText = 'svärdotter';
                             break;
-                        case 'sons son':
+                        case 'min sons son':
                             ans.innerText = 'barnbarn';
                             break;
-                        case 'sons dotter':
+                        case 'min sons dotter':
                             ans.innerText = 'barnbarn';
                             break;
-                        case 'sons bror':
+                        case 'min sons bror':
                             ans.innerText = 'son';
                             break;
-                        case 'sons syster':
+                        case 'min sons syster':
                             ans.innerText = 'dotter';
                             break;
-                        case 'dotters man':
+                        case 'min dotters man':
                             ans.innerText = 'svärson';
                             break;
-                        case 'dotters son':
+                        case 'min dotters son':
                             ans.innerText = 'barnbarn';
                             break;
-                        case 'dotters dotter':
+                        case 'min dotters dotter':
                             ans.innerText = 'barnbarn';
                             break;
-                        case 'dotters bror':
+                        case 'min dotters bror':
                             ans.innerText = 'son';
                             break;
-                        case 'dotters syster':
+                        case 'min dotters syster':
                             ans.innerText = 'dotter';
                             break;
                         default:
