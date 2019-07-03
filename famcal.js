@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
             switch (click.innerText) {
                 case 'CLEAR':
                     steps.innerText = '';
-                    ans.innerText = '';
+                    ans.innerText = 'Ställ din fråga.';
                     list = [];
                     break;
                 case 'UNDO':
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         const pop = list.pop();
                         steps.innerText = steps.innerText.slice(
                             0,
-                            steps.innerText.length - pop.length - 1,
+                            steps.innerText.length - pop.length - 2,
                         );
                     }
                     break;
@@ -73,6 +73,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     break;
                 case '=':
                     switch (steps.innerText) {
+                        case 'HEJ! HUR KALLAR JAG DIG?':
+                            ans.innerText = 'Ställ din fråga.';
+                            break;
+                        case '':
+                            ans.innerText = 'Ställ din fråga.';
+                            break;
                         case 'fars fars far':
                             ans.innerText = 'gammelfarfar';
                             break;
