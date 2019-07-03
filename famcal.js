@@ -42,10 +42,12 @@ document.addEventListener('DOMContentLoaded', () => {
         click.onclick = () => {
             list.push(click.innerText);
             ans.innerText = '';
-            if (list.length > 1) {
-                steps.textContent += `s ${click.innerText}`;
-            } else {
-                steps.textContent = `min ${click.innerText}`;
+            if (steps.innerText.length < 115) {
+                if (list.length > 1) {
+                    steps.textContent += `s ${click.innerText}`;
+                } else {
+                    steps.textContent = `min ${click.innerText}`;
+                }
             }
         };
     });
