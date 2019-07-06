@@ -69,10 +69,54 @@ document.addEventListener('DOMContentLoaded', () => {
                         );
                     }
                     break;
-
-                case '<=>': //under construction
-                    ans.innerText = '...det kommer snart!';
-                    break;
+                case '<=>':
+                    switch (steps.innerText) {
+                        case 'HEJ! HUR KALLAR JAG DIG?':
+                            ans.innerText = 'Ställ din fråga.';
+                            break;
+                        case '':
+                            ans.innerText = 'Ställ din fråga.';
+                            break;
+                        case 'farfar':
+                            ans.innerText = 'barnbarn';
+                            break;
+                        case 'farmor':
+                            ans.innerText = 'barnbarn';
+                            break;
+                        case 'morfar':
+                            ans.innerText = 'barnbarn';
+                            break;
+                        case 'mormor':
+                            ans.innerText = 'barnbarn';
+                            break;
+                        case 'farbror':
+                            ans.innerText = 'brorson eller brorsdotter';
+                            break;
+                        case 'faster':
+                            ans.innerText = 'brorson eller brorsdotter';
+                            break;
+                        case 'morbror':
+                            ans.innerText = 'systerson eller systerdotter';
+                            break;
+                        case 'moster':
+                            ans.innerText = 'systerson eller systerdotter';
+                            break;
+                        case 'kusin':
+                            ans.innerText = 'kusin';
+                            break;
+                        case 'svärfar':
+                            ans.innerText = 'svärson eller svärdotter';
+                            break;
+                        case 'svärmor':
+                            ans.innerText = 'svärson eller svärdotter';
+                            break;
+                        case 'svåger':
+                            ans.innerText = 'svåger eller svägerska';
+                            break;
+                        case 'svägerska':
+                            ans.innerText = 'svåger eller svägerska';
+                            break;
+                    }
                 case '=':
                     switch (steps.innerText) {
                         case 'HEJ! HUR KALLAR JAG DIG?':
@@ -114,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         case 'min fars dotter':
                             ans.innerText = 'min syskon eller jag?';
                             break;
-                        case 'min farrs brors son':
+                        case 'min fars brors son':
                             ans.innerText = 'kusin';
                             break;
                         case 'min fars brors dotter':
