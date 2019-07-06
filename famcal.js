@@ -181,6 +181,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         case 'min mans syster':
                             ans.innerText = 'svägerska';
                             break;
+                        case 'min mans fru':
+                            ans.innerText = 'jag?';
+                            break;
                         case 'min frus far':
                             ans.innerText = 'svärfar';
                             break;
@@ -192,6 +195,9 @@ document.addEventListener('DOMContentLoaded', () => {
                             break;
                         case 'min frus syster':
                             ans.innerText = 'svägerska';
+                            break;
+                        case 'min frus man':
+                            ans.innerText = 'jag?';
                             break;
                         case 'min brors far':
                             ans.innerText = 'kanske min far?';
@@ -208,6 +214,12 @@ document.addEventListener('DOMContentLoaded', () => {
                         case 'min brors dotter':
                             ans.innerText = 'brosdotter';
                             break;
+                        case 'min brors bror':
+                            ans.innerText = 'min bror eller jag?';
+                            break;
+                        case 'min brors syster':
+                            ans.innerText = 'min syster eller jag?';
+                            break;
                         case 'min systers far':
                             ans.innerText = 'kanske min far?';
                             break;
@@ -222,6 +234,12 @@ document.addEventListener('DOMContentLoaded', () => {
                             break;
                         case 'min systers dotter':
                             ans.innerText = 'systerdotter';
+                            break;
+                        case 'min systers bror':
+                            ans.innerText = 'min bror eller jag?';
+                            break;
+                        case 'min systers syster':
+                            ans.innerText = 'min syster eller jag?';
                             break;
                         case 'min sons fru':
                             ans.innerText = 'svärdotter';
@@ -315,6 +333,9 @@ document.addEventListener('DOMContentLoaded', () => {
                             break;
                         case 'barnbarn':
                             ans.innerText = 'farfar / morfar / farmor / mormor?';
+                            break;
+                        case 'Jag vet inte!':
+                            ans.innerText = 'Jag vet inte!!!';
                             break;
                         default:
                             ans.innerText = '...jag undrar...'; ////
