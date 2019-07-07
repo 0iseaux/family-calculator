@@ -182,6 +182,12 @@ document.addEventListener('DOMContentLoaded', () => {
                         case 'min mans fru':
                             ans.innerText = 'jag?';
                             break;
+                        case 'min mans son':
+                            ans.innerText = 'min son?';
+                            break;
+                        case 'min mans dotter':
+                            ans.innerText = 'min dotter?';
+                            break;
                         case 'min frus far':
                             ans.innerText = 'svärfar';
                             break;
@@ -196,6 +202,12 @@ document.addEventListener('DOMContentLoaded', () => {
                             break;
                         case 'min frus man':
                             ans.innerText = 'jag?';
+                            break;
+                        case 'min frus son':
+                            ans.innerText = 'min son?';
+                            break;
+                        case 'min frus dotter':
+                            ans.innerText = 'min dotter?';
                             break;
                         case 'min brors far':
                             ans.innerText = 'kanske min far?';
