@@ -37,8 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     document.querySelector('#UNDO').style.fontSize = '30px';
     document.querySelector('#CLEAR').style.fontSize = '30px';
-    document.getElementById('<=>').setAttribute('id', 'reverse');
-    document.getElementById('=').setAttribute('id', 'equal');
 
     document.querySelectorAll('.buttons').forEach(click => {
         click.onclick = () => {
@@ -56,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.specialBs').forEach(click => {
         click.onclick = () => {
-            switch (click.getAttribute('id')) {
+            switch (click.innerText) {
                 case 'CLEAR':
                     steps.innerText = '';
                     ans.innerText = 'Ställ din fråga.';
@@ -71,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         );
                     }
                     break;
-                case 'equal':
+                case '=':
                     switch (steps.innerText) {
                         case 'HEJ! HUR KALLAR JAG DIG?':
                             ans.innerText = 'Ställ din fråga.';
@@ -275,7 +273,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             ans.innerText = 'Jag vet inte!';
                     }
                     break;
-                case 'reverse':
+                case '<=>':
                     switch (ans.innerText) {
                         case 'SLÅ UPP!':
                             ans.innerText = 'ställ din fråga först.';
