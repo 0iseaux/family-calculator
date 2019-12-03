@@ -1,6 +1,6 @@
 # Family Calculator (Swedish)
 
-[Start calculating!](./famcal.html)
+[Start calculating!](https://0iseaux.github.io/family-calculator/)
 
 ## How to use
 
